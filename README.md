@@ -2,6 +2,8 @@
 ### Structure-Conditioned Optimization Pipeline  
 ### by Evo Engineering LLC
 
+> HLX-Adam improves convergence in non-convex problems by up to **26% under identical initialization conditions**, by conditioning the search space before gradient descent.
+
 ---
 
 ## ⚡ Core Result
