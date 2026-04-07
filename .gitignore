@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual envs
+venv/
+.env/
+.env.*
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# Large or generated results (optional)
+results/*.npy
+results/*.csv
+
+# Keep images if you want demo visuals
+# (do NOT ignore .png if you're using plots)
