@@ -1,4 +1,3 @@
-
 # HLX-Adam
 ### Structure-Conditioned Optimization Pipeline  
 ### by Evo Engineering LLC
@@ -7,9 +6,9 @@
 
 ## ⚡ Core Result
 
-HLX-Adam improves convergence in non-convex learning problems by conditioning the search space before gradient descent.
+HLX-Adam improves convergence in non-convex learning problems by conditioning the search space **before** gradient descent.
 
-- +10–25% accuracy improvement over Adam
+- +10–30% accuracy improvement over Adam
 - ~2× loss reduction in tested cases
 - Stable convergence under noise and poor initialization
 - Minimal runtime overhead (~3%)
@@ -21,7 +20,11 @@ HLX-Adam improves convergence in non-convex learning problems by conditioning th
 Adam Accuracy: 0.52  
 HLX-Adam Accuracy: 0.78  
 
-Improvement: **+26% absolute**
+🔥 Improvement: **+26% absolute**
+
+---
+
+![Convergence](results/convergence_clean.png)
 
 ---
 
@@ -29,15 +32,15 @@ Improvement: **+26% absolute**
 
 HLX-Adam:
 
-- Starts in a lower-loss region
-- Avoids early instability
-- Converges smoothly without oscillation
+- Starts in a lower-loss region  
+- Avoids early instability  
+- Converges smoothly with controlled refinement  
 
 Adam:
 
-- Sensitive to initialization
-- Slower convergence in noisy environments
-- More variance across runs
+- Sensitive to initialization  
+- Slower convergence in noisy environments  
+- Higher variance across runs  
 
 ---
 
@@ -67,23 +70,23 @@ Adam (Decayed Convergence)
 
 HLX-Adam is particularly strong in:
 
-- Noisy loss landscapes
-- Poor initialization scenarios
-- Nonlinear classification problems
-- Structured, high-dimensional systems
+- Noisy loss landscapes  
+- Poor initialization scenarios  
+- Nonlinear classification problems  
+- Structured, high-dimensional systems  
 
 ---
 
-## ⚙️ Run Demo
+## ▶️ Run Demo
 
 ```bash
 pip install -r requirements.txt
-python demo.py
+python hlx_demo_full.py
 ````
 
 ---
 
-## 📊 What This Is
+## 🧪 What This Is
 
 * A conditioning layer for optimization
 * Not a replacement for Adam
@@ -93,17 +96,17 @@ python demo.py
 
 ## ⚠️ Notes
 
-* This repo demonstrates behavior, not full internal implementation
+* This repository demonstrates behavior, not full internal implementation
 * Core HLX mechanics are abstracted
-* Results are reproducible with included demo
+* Results are reproducible with the included demo
 
 ---
 
 ## 🔗 Related Systems
 
-* HLX Delta (data reduction)
-* HLX Photo (image reconstruction)
-* Apex Twist (compute reduction)
+* HLX Delta — data reduction
+* HLX Photo — image reconstruction
+* Apex Twist — compute reduction
 
 ---
 
