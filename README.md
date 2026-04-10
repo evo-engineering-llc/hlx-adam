@@ -1,28 +1,26 @@
 # HLX-Adam
-### Structure-Conditioned Optimization Pipeline  
-### by Evo Engineering LLC
 
-> HLX-Adam improves convergence in non-convex problems by up to **26% under identical initialization conditions**, by conditioning the search space before gradient descent.
+Adaptive optimization pipeline for complex systems.
+
+HLX-Adam improves convergence behavior in challenging optimization problems under identical initialization conditions.
 
 ---
 
 ## ⚡ Core Result
 
-HLX-Adam improves convergence in non-convex learning problems by conditioning the search space **before** gradient descent.
-
-- +10–30% accuracy improvement over Adam
-- ~2× loss reduction in tested cases
-- Stable convergence under noise and poor initialization
-- Minimal runtime overhead (~3%)
+- Improved convergence in non-convex problems  
+- Increased accuracy in tested scenarios  
+- Stable behavior under noise and poor initialization  
+- Minimal runtime overhead  
 
 ---
 
-## 🔥 Example Output (Real Classification)
+## 🔥 Example Output
 
 Adam Accuracy: 0.52  
 HLX-Adam Accuracy: 0.78  
 
-🔥 Improvement: **+26% absolute**
+Improvement: +26% absolute  
 
 ---
 
@@ -34,11 +32,11 @@ HLX-Adam Accuracy: 0.78
 
 HLX-Adam:
 
-- Starts in a lower-loss region  
-- Avoids early instability  
-- Converges smoothly with controlled refinement  
+- Reaches lower-loss regions earlier  
+- Reduces instability during early optimization  
+- Converges more consistently across runs  
 
-Adam:
+Baseline optimizers:
 
 - Sensitive to initialization  
 - Slower convergence in noisy environments  
@@ -46,36 +44,14 @@ Adam:
 
 ---
 
-## 🧠 How It Works
-
-HLX-Adam is a three-stage pipeline:
-
-```
-
-Initialization
-↓
-HLX (Structure Discovery)
-↓
-Refinement (Local Collapse)
-↓
-Adam (Decayed Convergence)
-
-````
-
-### Key Idea
-
-> Optimization improves when the search space is conditioned before gradients are applied.
-
----
-
 ## 🔬 Behavior
 
-HLX-Adam is particularly strong in:
+HLX-Adam performs well in:
 
-- Noisy loss landscapes  
+- Noisy optimization landscapes  
 - Poor initialization scenarios  
 - Nonlinear classification problems  
-- Structured, high-dimensional systems  
+- High-dimensional systems  
 
 ---
 
@@ -90,25 +66,17 @@ python hlx_demo_full.py
 
 ## 🧪 What This Is
 
-* A conditioning layer for optimization
-* Not a replacement for Adam
-* Not a general-purpose optimizer
+* An optimization enhancement layer
+* Designed to improve convergence behavior
+* Compatible with existing optimizers
 
 ---
 
 ## ⚠️ Notes
 
 * This repository demonstrates behavior, not full internal implementation
-* Core HLX mechanics are abstracted
+* Internal methods are abstracted
 * Results are reproducible with the included demo
-
----
-
-## 🔗 Related Systems
-
-* HLX Delta — data reduction
-* HLX Photo — image reconstruction
-* Apex Twist — compute reduction
 
 ---
 
